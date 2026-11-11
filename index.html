@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEGURANÇA: só o Google Fonts foi autorizado para além do próprio site. Se self-hostares as fontes, volta a 'self'. -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- LEMBRAR: remover quando o site for publicado com conteúdo real -->
+  <title>Passos Artes — Artes e Reciclagem</title>
+  <meta name="description" content="Passos Artes — Artes e Reciclagem. Website em construção.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Playfair+Display:ital,wght@0,600;1,500&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip" href="#inicio">Saltar para o conteúdo</a>
+
+  <!-- ===== CABEÇALHO / MENU ===== -->
+  <header class="nav" id="topo">
+    <a class="logo" href="#inicio" aria-label="Passos Artes — início"><img src="img/logo-horizontal.png"
+        alt="Passos Artes — Artes e Reciclagem" width="1199" height="424"></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu"
+      aria-label="Abrir menu"><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a
+        href="#portfolio">Portfólio</a><a href="#galeria">Galeria</a><a href="#clientes">Clientes</a><a
+        href="#contactos">Contactos</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== INÍCIO (hero) ===== -->
+    <section id="inicio" class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow rv">Artes e Reciclagem</p>
+        <h1 class="rv"><span class="hero__escala">A arte transforma espaços. A criatividade transforma histórias.</span>
+        </h1>
+        <p class="lead rv">Expressamos ideias, emoções e identidade através de criações artísticas que dão vida a cada
+          espaço.</p>
+        <div class="actions rv">
+          <a class="btn btn--light" href="#galeria">Explorar trabalhos</a>
+          <a class="btn btn--ghost" href="#servicos">Conhecer os serviços</a>
+        </div>
+      </div>
+      <!-- LEMBRAR: estas miniaturas devem mostrar as fotos mais recentes da galeria (trocar src/alt) -->
+      <ul class="hero__faixa" aria-label="Trabalhos recentes">
+        <li class="f1"><img src="img/obra-1.jpg" alt="Mural «Encontro de vozes»" width="1017" height="1280"
+            loading="lazy"></li>
+        <li class="f2"><img src="img/obra-2.jpg" alt="Colar pintado à mão" width="846" height="1280" loading="lazy">
+        </li>
+        <li class="f3"><img src="img/obra-3.jpg" alt="Camisola «O traço que cresce»" width="1280" height="1180"
+            loading="lazy"></li>
+        <li class="f4"><img src="img/obra-4.jpg" alt="Moda pintada à mão" width="853" height="1280" loading="lazy"></li>
+      </ul>
+      <a class="scroll" href="#sobre" aria-label="Descer para a secção Sobre"><span></span></a>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="sec dark">
+      <div class="wrap sobre">
+        <figure class="sobre__foto rv rv-img" data-orientacao>
+          <!-- LEMBRAR: foto dos proprietários. Troca o espaço por <img src="img/proprietarios.jpg" alt="Proprietários da Passos Artes" width="..." height="..."> (a revelação adapta-se à orientação) -->
+          <div class="ph"><span>Foto dos proprietários</span></div>
+        </figure>
+        <div class="sobre__texto">
+          <h2 class="title rv">Por detrás de cada criação, existe uma história.</h2>
+          <!-- LEMBRAR: texto provisório, substituir pelo oficial da empresa -->
+          <p class="rv">A Passos Artes é uma empresa dedicada à expressão artística e à criação de trabalhos que
+            valorizam a criatividade, a identidade e a beleza dos espaços.</p>
+          <p class="rv">Através das nossas criações e serviços artísticos, procuramos transformar ideias em experiências
+            visuais, dando forma a projetos que expressam personalidade e originalidade.</p>
+          <p class="rv">Acreditamos que a arte vai além da decoração: é uma forma de comunicar, inspirar e criar
+            ligações.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVIÇOS (a grelha adapta-se a qualquer quantidade de cartões) ===== -->
+    <section id="servicos" class="sec light">
+      <div class="wrap">
+        <h2 class="title rv">Serviços</h2>
+        <p class="sub rv">Exemplos provisórios, a confirmar com a empresa.</p>
+        <ul class="servicos">
+          <li class="servico rv">
+            <span class="servico__n">01</span>
+            <!-- LEMBRAR: foto provisória do serviço (img/obra-1.jpg). Troca por uma foto específica deste serviço -->
+            <div class="servico__foto"><img src="img/obra-1.jpg" alt="Mural «Encontro de vozes»" width="1017"
+                height="1280" loading="lazy"></div>
+            <h3>Pintura Artística</h3>
+            <p>Criações artísticas desenvolvidas para transmitir ideias, emoções e identidade através da pintura.</p>
+            <a class="btn btn--dark"
+              data-wa="Olá, tenho interesse no serviço Pintura Artística. Gostaria de obter mais informações."
+              href="#contactos">Pedir orçamento</a>
+          </li>
+          <li class="servico rv">
+            <span class="servico__n">02</span>
+            <!-- LEMBRAR: foto provisória do serviço (img/obra-4.jpg). Troca por uma foto específica deste serviço -->
+            <div class="servico__foto"><img src="img/obra-4.jpg" alt="Moda pintada à mão" width="853" height="1280"
+                loading="lazy"></div>
+            <h3>Quadros Personalizados</h3>
+            <p>Trabalhos artísticos personalizados, pensados para representar diferentes estilos e preferências.</p>
+            <a class="btn btn--dark"
+              data-wa="Olá, tenho interesse no serviço Quadros Personalizados. Gostaria de obter mais informações."
+              href="#contactos">Pedir orçamento</a>
+          </li>
+          <li class="servico rv">
+            <span class="servico__n">03</span>
+            <!-- LEMBRAR: foto provisória do serviço (img/obra-2.jpg). Troca por uma foto específica deste serviço -->
+            <div class="servico__foto"><img src="img/obra-2.jpg" alt="Colar pintado à mão" width="846" height="1280"
+                loading="lazy"></div>
+            <h3>Arte Decorativa</h3>
+            <p>Composições artísticas que acrescentam personalidade e expressão visual aos ambientes.</p>
+            <a class="btn btn--dark"
+              data-wa="Olá, tenho interesse no serviço Arte Decorativa. Gostaria de obter mais informações."
+              href="#contactos">Pedir orçamento</a>
+          </li>
+          <li class="servico rv">
+            <span class="servico__n">04</span>
+            <!-- LEMBRAR: foto provisória do serviço (img/obra-3.jpg). Troca por uma foto específica deste serviço -->
+            <div class="servico__foto"><img src="img/obra-3.jpg" alt="Camisola «O traço que cresce»" width="1280"
+                height="1180" loading="lazy"></div>
+            <h3>Projetos Artísticos</h3>
+            <p>Desenvolvimento de trabalhos criativos adaptados às necessidades e ideias de cada projeto.</p>
+            <a class="btn btn--dark"
+              data-wa="Olá, tenho interesse no serviço Projetos Artísticos. Gostaria de obter mais informações."
+              href="#contactos">Pedir orçamento</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== PORTFÓLIO ===== -->
+    <section id="portfolio" class="sec dark">
+      <div class="wrap">
+        <h2 class="title rv">Portfólio</h2>
+        <!-- <p class="sub rv">Substitui cada espaço por uma fotografia:
+          <code>&lt;img src="img/obra-1.jpg" alt="..."&gt;</code> -->
+        </p>
+        <div class="folio">
+          <figure class="ph rv">
+            <figcaption>Obra 1</figcaption>
+          </figure>
+          <figure class="ph rv">
+            <figcaption>Obra 2</figcaption>
+          </figure>
+          <figure class="ph rv">
+            <figcaption>Obra 3</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERIA (descrição à esquerda, foto à direita; revelação em sequência) ===== -->
+    <section id="galeria" class="sec light">
+      <div class="wrap">
+        <h2 class="title rv">Galeria</h2>
+        <div class="galeria">
+          <article class="obra">
+            <div class="obra__texto"><span class="obra__n">01</span>
+              <h3>Mural «Encontro de vozes»</h3>
+              <p>Mural pintado em muro exterior, com figuras em tons de terra. Descrição provisória.</p>
+            </div>
+            <!-- LEMBRAR: foto da obra em img/obra-1.jpg (trocar ficheiro e texto alternativo quando tiveres as definitivas) -->
+            <button type="button" class="obra__foto" data-full="img/obra-1.jpg"
+              data-alt="Mural «Encontro de vozes»"><img src="img/obra-1.jpg" alt="Mural «Encontro de vozes»"
+                width="1017" height="1280" loading="lazy"></button>
+          </article>
+          <article class="obra">
+            <div class="obra__texto"><span class="obra__n">02</span>
+              <h3>Colar pintado à mão</h3>
+              <p>Peça artesanal em suporte irregular, pintada à mão e montada com cordão. Descrição provisória.</p>
+            </div>
+            <!-- LEMBRAR: foto da obra em img/obra-2.jpg (trocar ficheiro e texto alternativo quando tiveres as definitivas) -->
+            <button type="button" class="obra__foto" data-full="img/obra-2.jpg" data-alt="Colar pintado à mão"><img
+                src="img/obra-2.jpg" alt="Colar pintado à mão" width="846" height="1280" loading="lazy"></button>
+          </article>
+          <article class="obra">
+            <div class="obra__texto"><span class="obra__n">03</span>
+              <h3>Camisola «O traço que cresce»</h3>
+              <p>Pintura em aerógrafo sobre tecido, com uma mão que desenha uma árvore. Descrição provisória.</p>
+            </div>
+            <!-- LEMBRAR: foto da obra em img/obra-3.jpg (trocar ficheiro e texto alternativo quando tiveres as definitivas) -->
+            <button type="button" class="obra__foto" data-full="img/obra-3.jpg"
+              data-alt="Camisola «O traço que cresce»"><img src="img/obra-3.jpg" alt="Camisola «O traço que cresce»"
+                width="1280" height="1180" loading="lazy"></button>
+          </article>
+          <article class="obra">
+            <div class="obra__texto"><span class="obra__n">04</span>
+              <h3>Moda pintada à mão</h3>
+              <p>Peças de vestuário customizadas com retratos pintados. Descrição provisória.</p>
+            </div>
+            <!-- LEMBRAR: foto da obra em img/obra-4.jpg (trocar ficheiro e texto alternativo quando tiveres as definitivas) -->
+            <button type="button" class="obra__foto" data-full="img/obra-4.jpg" data-alt="Moda pintada à mão"><img
+                src="img/obra-4.jpg" alt="Moda pintada à mão" width="853" height="1280" loading="lazy"></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CLIENTES (nomes fictícios; a grelha adapta-se à quantidade) ===== -->
+    <section id="clientes" class="sec dark">
+      <div class="wrap">
+        <h2 class="title rv">Parcerias que também contam histórias.</h2>
+        <p class="sub rv">Cada colaboração representa uma oportunidade de criar, transformar e partilhar novas
+          experiências.</p>
+        <ul class="clientes">
+          <li class="cliente rv">
+            <!-- LEMBRAR: se tiveres o logótipo, usa <img src="img/clientes/logo-X.png" alt="Nova Era Group"> em vez do nome -->Nova
+            Era Group
+          </li>
+          <li class="cliente rv">
+            <!-- LEMBRAR: se tiveres o logótipo, usa <img src="img/clientes/logo-X.png" alt="Horizonte Criativo"> em vez do nome -->Horizonte
+            Criativo
+          </li>
+          <li class="cliente rv">
+            <!-- LEMBRAR: se tiveres o logótipo, usa <img src="img/clientes/logo-X.png" alt="Vision Business"> em vez do nome -->Vision
+            Business
+          </li>
+          <li class="cliente rv">
+            <!-- LEMBRAR: se tiveres o logótipo, usa <img src="img/clientes/logo-X.png" alt="Casa Moderna"> em vez do nome -->Casa
+            Moderna
+          </li>
+          <li class="cliente rv">
+            <!-- LEMBRAR: se tiveres o logótipo, usa <img src="img/clientes/logo-X.png" alt="Elite Concept"> em vez do nome -->Elite
+            Concept
+          </li>
+          <li class="cliente rv">
+            <!-- LEMBRAR: se tiveres o logótipo, usa <img src="img/clientes/logo-X.png" alt="Urban Space"> em vez do nome -->Urban
+            Space
+          </li>
+          <li class="cliente rv">
+            <!-- LEMBRAR: se tiveres o logótipo, usa <img src="img/clientes/logo-X.png" alt="Prisma Studio"> em vez do nome -->Prisma
+            Studio
+          </li>
+          <li class="cliente rv">
+            <!-- LEMBRAR: se tiveres o logótipo, usa <img src="img/clientes/logo-X.png" alt="Infinity Projects"> em vez do nome -->Infinity
+            Projects
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTOS ===== -->
+    <section id="contactos" class="sec light">
+      <div class="wrap split">
+        <h2 class="title rv">Vamos<br>conversar?</h2>
+        <div class="rv">
+          <p>O contacto é feito por WhatsApp, com uma mensagem já preparada.</p>
+          <!-- LEMBRAR: o número de WhatsApp define-se no topo do script.js (WA_NUMBER) -->
+          <a class="btn btn--dark" data-wa="Olá, gostaria de falar com a Passos Artes." href="#contactos">Abrir
+            WhatsApp</a>
+          <p class="muted wa-note" hidden>Número de WhatsApp por configurar (ver script.js).</p>
+          <p class="muted">Telefone, localização: <span class="tag">por preencher</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="rodape">
+    <div class="wrap rodape__grelha">
+      <div class="rodape__marca">
+        <img src="img/logo-horizontal.png" alt="Passos Artes" width="1199" height="424" loading="lazy">
+        <p>Arte que transforma espaços e dá voz a histórias.</p>
+      </div>
+      <nav class="rodape__nav" aria-label="Rodapé">
+        <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a
+          href="#portfolio">Portfólio</a><a href="#galeria">Galeria</a><a href="#clientes">Clientes</a><a
+          href="#contactos">Contactos</a>
+      </nav>
+      <div class="rodape__contacto">
+        <!-- LEMBRAR: trocar os "#" pelos links oficiais das redes sociais (e acrescentar ícones, se quiseres) -->
+        <p><a href="#" rel="noopener noreferrer">Instagram</a> · <a href="#" rel="noopener noreferrer">Facebook</a> · <a
+            href="#" rel="noopener noreferrer">TikTok</a></p>
+        <!-- LEMBRAR: trocar pelo email oficial (também no mailto:) -->
+        <p><a href="mailto:EMAIL_AQUI@dominio.ao">EMAIL_AQUI@dominio.ao</a></p>
+      </div>
+    </div>
+    <p class="rodape__fim">© <span id="ano"></span> Passos Artes — Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão fixo do WhatsApp (o número vem do script.js) -->
+  <a class="wa-fixed" data-wa="Olá, gostaria de falar com a Passos Artes." href="#contactos"
+    aria-label="Falar no WhatsApp">WhatsApp</a>
+
+  <dialog class="lb" aria-label="Imagem ampliada">
+    <button type="button" class="lb__x" aria-label="Fechar">×</button>
+    <button type="button" class="lb__p" aria-label="Anterior">‹</button>
+    <img alt="" width="1280" height="720">
+    <button type="button" class="lb__n" aria-label="Seguinte">›</button>
+  </dialog>
+</body>
+
+</html>
