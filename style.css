@@ -235,6 +235,14 @@ code {
     gap: .8rem
 }
 
+.download-folio-ceos {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+
 /* Hero: sala clara que escurece com o scroll (--p vai de 0 a 1) */
 .hero {
     position: relative;
