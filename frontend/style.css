@@ -387,7 +387,7 @@ code {
     grid-template-columns: 1fr
 }
 
-.cards {
+/* .cards {
     list-style: none;
     margin: 2.5rem 0 0;
     padding: 0;
@@ -405,9 +405,9 @@ code {
     border: 1px solid var(--b);
     border-radius: .75rem;
     transition: transform .4s var(--ease), background-color .4s, color .4s
-}
+} */
 
-.card:hover {
+/* .card:hover {
     transform: translateY(-6px);
     background: var(--k);
     color: var(--w)
@@ -439,7 +439,7 @@ code {
 .card .btn {
     align-self: flex-start;
     margin-top: .6rem
-}
+} */
 
 /* Portfólio e galeria: espaços para fotografias */
 .ph {
@@ -475,7 +475,7 @@ code {
     grid-auto-rows: 11rem
 }
 
-.gallery .ph {
+/* .gallery .ph {
     cursor: pointer;
     background: var(--b);
     color: var(--m);
@@ -514,12 +514,12 @@ code {
 .gallery .ph:hover img+span,
 .gallery .ph:focus-visible img+span {
     opacity: 1
-}
+} */
 
-.g1 {
+/* .g1 {
     grid-column: span 2;
     grid-row: span 2
-}
+} */
 
 /* Revelação (só quando o JS está ativo) */
 .js .rv {
