@@ -1,4 +1,4 @@
-'use strict';
+'use strict'; // esta linha deve ser a primeira do ficheiro, para que o modo estrito se aplique a todo o script. esse modo evita erros silenciosos e permite otimizações do motor de JavaScript.
 (function () {
   // Número de WhatsApp: só dígitos com indicativo, sem + nem espaços (ex.: 244900000000).
   let WA_NUMBER = '244939417862';

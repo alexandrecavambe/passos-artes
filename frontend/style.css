@@ -258,7 +258,7 @@ code {
 .hero__bg {
     position: absolute;
     inset: 0;
-    background: url(img/fundo-v3.png) center/cover no-repeat;
+    background: url(img/hero-passos-artes.jpg) center/cover no-repeat;
     transform: scale(calc(1 + var(--p) * .12));
     filter: grayscale(var(--p)) brightness(calc(1 - var(--p) * .75));
     will-change: transform
